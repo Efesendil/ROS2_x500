@@ -13,11 +13,10 @@ This project could be used for any other future work.
   source /usr/share/gazebo/setup.sh
   
   export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/<pc_name>/sim_ws/src/simulation/models/
-  
-4. colcon build
-5. cd sim/ws
-6. colcon build
-7. install/setup.bash
-8. source ~/.bashrc
-9. gazebo
-10. Find model x500 in gazebo
+ 
+4. cd sim/ws
+5. colcon build
+6. install/setup.bash
+7. source ~/.bashrc
+8. gazebo
+9. Find model x500 in gazebo
