@@ -1,0 +1,31 @@
+# mydrone:
+# Publish all joint states
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+# Velocity Controllers
+joint_motor_controller:
+  type: velocity_controllers/JointGroupVelocityController
+  joints:
+    - front_left_prop_joint
+    - front_right_prop_joint
+    - back_left_prop_joint
+    - back_right_prop_joint
+  # gains:
+  #       front_left_prop_joint: {p: 10000, i: 1, d: 1000}
+  #       front_right_prop_joint: {p: 10000, i: 1, d: 1000}
+  #       back_left_prop_joint: {p: 10000, i: 1, d: 1000}
+  #       back_right_prop_joint: {p: 10000, i: 1, d: 1000}
+
+# /gazebo_ros_control:
+#   pid_gains:
+#     front_left_prop_joint: {p: 10000, i: 1, d: 1000}
+#     front_right_prop_joint: {p: 10000, i: 1, d: 1000}
+#     back_left_prop_joint: {p: 10000, i: 1, d: 1000}
+#     back_right_prop_joint: {p: 10000, i: 1, d: 1000}
+# Position Controller
+camera_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: camera_joint
+  pid: {p: 10000.0, i: 1, d: 1000.0}
