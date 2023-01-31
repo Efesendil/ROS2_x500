@@ -11,6 +11,7 @@ This project could be used for any other future work.
   source /opt/ros/foxy/setup.bash
   source /usr/share/gazebo/setup.sh
   export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/<pc_name>/sim_ws/src/simulation/models/
+  
 4. colcon build
 5. cd sim/ws
 6. colcon build
