@@ -5,6 +5,7 @@ This project could be used for any other future work.
 
 -----
 1. Install ROS2-foxy
+2. Create workspace "sim_ws/src", create folder "simulation" in src, go to "simulation"
 2. Clone the repo
 3. Add this to .bashrc:
 
